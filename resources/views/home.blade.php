@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('header')
     <div class="content-header">
         <div class="container-fluid">
@@ -25,6 +25,9 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none"> Logout
+                            @csrf
+                        </form>
 
                         {{ __('You are logged in!') }}
                     </div>
