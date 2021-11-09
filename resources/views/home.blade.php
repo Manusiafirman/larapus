@@ -25,10 +25,6 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none"> Logout
-                            @csrf
-                        </form>
-
                         {{ __('You are logged in!') }}
                     </div>
                 </div>
